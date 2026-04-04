@@ -1,0 +1,84 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Destinations Section */
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.destination {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination h2 {
+    margin: 15px 0 10px 0;
+    color: #8b5e3c;
+}
+
+.destination p {
+    padding: 0 15px 15px 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8b5e3c;
+    color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 1000px) {
+    .destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+}
