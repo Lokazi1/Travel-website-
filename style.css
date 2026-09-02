@@ -1,32 +1,41 @@
-/* Reset default styles */
+```css
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body & Font */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fdf6f0;
-    color: #333;
+    background: #fffaf3;
+    color: #34495e;
 }
 
 /* Header */
 header {
     text-align: center;
-    background-color: #8b5e3c;
-    color: #fff;
-    padding: 50px 20px;
+    background: linear-gradient(
+        rgba(30, 90, 120, 0.75),
+        rgba(30, 90, 120, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 /* Destinations Section */
@@ -34,51 +43,63 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 50px 20px;
+    gap: 30px;
+    padding: 70px 20px;
+    background: #fffaf3;
 }
 
+/* Destination Cards */
 .destination {
-    background-color: #fff;
-    border-radius: 10px;
+    background: white;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 300px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    width: 320px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destination:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Destination Images */
 .destination img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
+/* Destination Titles */
 .destination h2 {
-    margin: 15px 0 10px 0;
-    color: #8b5e3c;
+    margin: 20px 0 10px;
+    color: #167d9a;
+    font-size: 1.6em;
 }
 
+/* Destination Text */
 .destination p {
-    padding: 0 15px 15px 15px;
+    padding: 0 20px 25px;
+    color: #667;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #8b5e3c;
-    color: #fff;
+    padding: 30px;
+    background: #167d9a;
+    color: white;
 }
 
-/* Responsive */
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
     .destinations {
         flex-direction: column;
         align-items: center;
     }
+
+    header h1 {
+        font-size: 2.5em;
+    }
 }
+```
