@@ -50,19 +50,23 @@ header p {
 
 /* Destination Cards */
 .destination {
-    background: white;
+    display: block;
+    background-color: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
     width: 320px;
     text-align: center;
+    text-decoration: none;
+    color: #34495e;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .destination:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
+
 
 /* Destination Images */
 .destination img {
