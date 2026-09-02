@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,6 +22,133 @@ header {
     url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=80");
 
     background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3em;
+}
+
+/* Destinations Section */
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 20px;
+    background: #fffaf3;
+}
+
+/* Destination Cards */
+.destination {
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    width: 320px;
+    text-align: center;
+    text-decoration: none;
+    color: #34495e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Destination Images */
+.destination img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Destination Titles */
+.destination h2 {
+    margin: 20px 0 10px;
+    color: #167d9a;
+    font-size: 1.6em;
+}
+
+/* Destination Text */
+.destination p {
+    padding: 0 20px 25px;
+    color: #667;
+}
+
+/* Country Information */
+.country-info {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.country-info h2,
+.places > h2 {
+    color: #167d9a;
+    margin: 25px 0 15px;
+}
+
+.country-info p {
+    margin-bottom: 30px;
+    font-size: 1.05em;
+}
+
+/* Places Section */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px 70px;
+}
+
+.places > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #167d9a;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}
     background-position: center;
     color: white;
     padding: 100px 20px;
