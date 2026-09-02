@@ -1,0 +1,70 @@
+# European Summer Travel Website 
+
+A dreamy travel website designed to inspire visitors to explore some of Europe's most beautiful destinations.
+
+The website focuses on a **European summer + dreamy travel** aesthetic, combining soft colours, beautiful destination imagery, and a clean, modern layout.
+
+## Destinations
+
+The website currently features:
+
+* 🇹🇷 **Turkey** — Explore Istanbul, Cappadocia, and Turkey's beautiful landscapes.
+* 🇬🇷 **Greece** — Discover Santorini, Athens, and the stunning Greek islands.
+* 🇨🇭 **Switzerland** — Experience the Swiss Alps, beautiful lakes, and charming villages.
+
+## Design
+
+The website uses a Mediterranean-inspired colour palette featuring:
+
+* Soft ocean blue
+* Warm white
+* Terracotta and sunset tones
+*  Natural earthy colours
+
+The goal is to create a **relaxed, sunny, dreamy holiday atmosphere**.
+
+## Features
+
+* Responsive destination cards
+* Beautiful travel imagery
+* Hover effects on destination cards
+* Responsive layout for different screen sizes
+* Turkey, Greece, and Switzerland destinations
+* Clean and simple user interface
+
+## Technologies
+
+* HTML5
+* CSS3
+
+## Project Structure
+
+```text
+Travel-website/
+│
+├── index.html
+├── style.css
+└── README.md
+```
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:Lokazi1/Travel-website-.git
+```
+
+2. Navigate into the project:
+
+```bash
+cd Travel-website-
+```
+
+3. Open `index.html` in your browser.
+
+##  Project Goal
+
+The goal of this project is to create a visually appealing travel website that captures the feeling of a "dreamy European summer and encourages people to discover new places.
+
+> "Pack your bags. Your next adventure is waiting."
