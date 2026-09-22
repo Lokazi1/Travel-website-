@@ -125,6 +125,19 @@ Medium: A feature has a problem but the website can still be used.
 
 Low: A small visual or content problem.
 
+Project Limitations
+The website is currently a static front-end project.
+It does not currently contain:
+•	User accounts
+•	Database functionality
+•	Online bookings
+•	Payment processing
+•	Server-side code
+•	User-generated content
+These limitations reduce the application's attack surface compared with a full travel-booking application, but the deployed website should still be tested for configuration and content-related issues.
+
+
+
 11. Test Results Summary
 Test Area	Tests Completed	Passed	Failed
 Functional Testing	8	8	0
