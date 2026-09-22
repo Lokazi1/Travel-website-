@@ -1,0 +1,142 @@
+European Summer Travel Website – QA Testing Document
+1. Project Information
+Item	Details
+Project Name	European Summer Travel Website
+Testing Type	Quality Assurance (QA) Testing
+Website Type	Static Website
+Technologies Used	HTML5 and CSS3
+Browser Tested	Google Chrome
+Operating System	Windows
+Tester	[Your Name]
+Test Date	[Insert Date]
+2. Purpose of Testing
+
+The purpose of my testing was to make sure that my European Summer Travel website works correctly and is easy for users to navigate.
+
+I tested the main pages, navigation links, images, styling, mobile layout, accessibility and basic website security.
+
+3. Functional Testing
+Test ID	Test Case	Test Steps	Expected Result	Actual Result	Status
+TC-001	Open Home Page	Open the website home page	Home page should load	Home page loaded correctly	PASS
+TC-002	Open Turkey Page	Click on the Turkey destination	Turkey page should open	Turkey page opened correctly	PASS
+TC-003	Open Greece Page	Click on the Greece destination	Greece page should open	Greece page opened correctly	PASS
+TC-004	Open Switzerland Page	Click on the Switzerland destination	Switzerland page should open	Switzerland page opened correctly	PASS
+TC-005	Return Home	Click the Home link	User should return to home page	Home page opened correctly	PASS
+TC-006	Check Images	Open each destination page	Images should load correctly	Images loaded correctly	PASS
+TC-007	Check CSS	Open the website pages	CSS styling should display correctly	Styling displayed correctly	PASS
+TC-008	Test Navigation	Click the main navigation links	Links should open the correct pages	Navigation worked correctly	PASS
+4. HTML Testing
+
+I checked the HTML pages to make sure they contained the basic HTML elements needed for the website to work correctly.
+
+Test ID	Check	Expected Result	Status
+HTML-001	DOCTYPE	<!DOCTYPE html> is included	PASS
+HTML-002	Page Title	Each page has a suitable title	PASS
+HTML-003	Character Encoding	UTF-8 is included	PASS
+HTML-004	Viewport	Mobile viewport is included	PASS
+HTML-005	HTML Structure	HTML, head and body elements are present	PASS
+
+The pages use the following viewport setting:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+5. Accessibility Testing
+
+I also checked some basic accessibility features to make the website easier for users to use.
+
+Test ID	Test	Expected Result	Status
+A11Y-001	Image Alt Text	Images should have useful alt text	PASS
+A11Y-002	Headings	Headings should be clear and organised	PASS
+A11Y-003	Links	Link text should clearly describe the destination	PASS
+A11Y-004	Colour	Text should be easy to see	PASS
+A11Y-005	Mobile Readability	Text should remain readable on smaller screens	PASS
+
+For example, an image uses alternative text:
+
+<img src="santorini.jpg" alt="Santorini, Greece">
+
+6. Responsive Testing
+
+I tested the website on different screen sizes to make sure the layout still works correctly.
+
+Test ID	Screen Size	Expected Result	Actual Result	Status
+RESP-001	1920 × 1080	Website displays correctly	Displayed correctly	PASS
+RESP-002	1366 × 768	Website displays correctly	Displayed correctly	PASS
+RESP-003	768 × 1024	Website remains usable	Remained usable	PASS
+RESP-004	390 × 844	Website remains readable	Remained readable	PASS
+
+The website was checked to make sure that users do not need to scroll horizontally unnecessarily.
+
+7. Link Testing
+
+I checked the links between my website pages to make sure they open the correct files.
+
+Link	Page Expected	Result	Status
+Home	index.html	Opened correctly	PASS
+Turkey	turkey.html	Opened correctly	PASS
+Greece	greece.html	Opened correctly	PASS
+Switzerland	switzerland.html	Opened correctly	PASS
+
+No broken links were found during the basic link testing.
+
+8. Image and External Resource Testing
+
+The website uses images and external resources. I checked that the images were loading correctly and that the website styling was not affected by missing resources.
+
+The checks included:
+
+Images loading correctly.
+
+CSS files loading correctly.
+
+External resources using HTTPS where applicable.
+
+Image credits or attribution being provided where required.
+
+9. Basic Security Testing
+
+As this is a static website, I focused on basic security checks that are relevant when the website is published online.
+
+The deployed website should be checked for:
+
+HTTPS
+
+Security headers
+
+Content Security Policy
+
+Referrer Policy
+
+X-Content-Type-Options
+
+These checks apply to the published website rather than the local HTML files.
+
+10. Defect Reporting
+
+If I find a problem during testing, I would record it as a bug.
+
+Bug ID	Problem	Expected Result	Actual Result	Severity	Status
+BUG-001	Example: Turkey link does not work	Turkey page should open	Page does not open	Medium	Open
+Severity Levels
+
+High: A major part of the website does not work.
+
+Medium: A feature has a problem but the website can still be used.
+
+Low: A small visual or content problem.
+
+11. Test Results Summary
+Test Area	Tests Completed	Passed	Failed
+Functional Testing	8	8	0
+HTML Testing	5	5	0
+Accessibility Testing	5	5	0
+Responsive Testing	4	4	0
+Link Testing	4	4	0
+Total	26	26	0
+12. Final QA Summary
+
+I tested my European Summer Travel website to check that the main features work correctly. I tested the navigation between the home page and the Turkey, Greece and Switzerland pages. I also checked the images, CSS, HTML structure, accessibility, links and responsive layout.
+
+The main tests passed successfully, and no broken links were found during testing. The website was also checked on different screen sizes to make sure it remains usable on desktop, tablet and mobile devices.
+
+Any future issues found after deployment should be recorded as bugs and fixed before the final version is released.
