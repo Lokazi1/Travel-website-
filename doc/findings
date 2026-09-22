@@ -1,0 +1,122 @@
+1. Purpose
+This document records issues discovered during testing of the European Summer Travel Website.
+Findings are separated from testing results so that the project maintains a clear distinction between:
+Test
+  ↓
+Observation
+  ↓
+Analysis
+  ↓
+Finding
+  ↓
+Recommendation
+2. Finding Categories
+Findings may relate to:
+•	Functionality
+•	Accessibility
+•	Security
+•	Performance
+•	Compatibility
+•	Maintainability
+3. Example Finding — Missing Alt Text
+Finding ID: WEB-001
+Severity: Low
+Category: Accessibility
+Title: Image missing alternative text
+Evidence:
+An image element does not contain meaningful alternative text.
+Impact:
+Users relying on screen readers may not receive information about the image.
+Recommendation:
+Add descriptive alt text.
+Example:
+<img
+    src="santorini.jpg"
+    alt="White buildings overlooking the sea in Santorini"
+>
+________________________________________
+4. Example Finding — Broken Local Link
+Finding ID: WEB-002
+Severity: Medium
+Category: Functionality
+Title: Broken destination link
+Evidence:
+A navigation link points to a local HTML resource that cannot be found.
+Impact:
+Visitors may be unable to access the selected destination page.
+Recommendation:
+Verify the filename and update the link.
+Example:
+<a href="greece.html">
+    Greece
+</a>
+________________________________________
+5. Example Finding — HTTP External Resource
+Finding ID: WEB-003
+Severity: Medium
+Category: Security
+Title: External resource loaded over HTTP
+Evidence:
+A page references an external resource using:
+http://
+instead of:
+https://
+Impact:
+Unencrypted external resources can be exposed to modification or observation during network transit.
+Recommendation:
+Use HTTPS resources whenever the provider supports them.
+________________________________________
+6. Example Finding — Missing Security Headers
+Finding ID: WEB-004
+Severity: Medium
+Category: Security
+Title: Security headers not configured
+Evidence:
+The deployed website does not return expected security-related HTTP response headers.
+Potential Impact:
+The absence of appropriate headers can reduce browser-side security protections.
+Recommendation:
+Configure appropriate response headers on the web server or hosting platform.
+Examples include:
+Content-Security-Policy
+X-Content-Type-Options
+Referrer-Policy
+Strict-Transport-Security
+This finding applies to the deployed website, not simply the local HTML files.
+7. Example Finding — Inline JavaScript
+Finding ID: WEB-005
+Severity: Informational
+Category: Maintainability / Security
+Title: Inline JavaScript detected
+Evidence:
+JavaScript functionality is embedded directly inside the HTML document.
+Impact:
+Inline scripts can make strict Content Security Policy configuration more difficult.
+Recommendation:
+Move JavaScript into an external JavaScript file where practical.
+Example:
+js/
+└── main.js
+and:
+<script src="js/main.js"></script>
+8. Finding Status
+Findings should be tracked using a status.
+ID	Category	Severity	Status
+WEB-001	Accessibility	Low	Open
+WEB-002	Functionality	Medium	Open
+WEB-003	Security	Medium	Open
+WEB-004	Security	Medium	Open
+WEB-005	Maintainability	Info	Open
+Possible statuses:
+•	Open
+•	In Progress
+•	Resolved
+•	Accepted
+
+
+
+
+
+
+
+
